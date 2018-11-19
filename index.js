@@ -40,7 +40,7 @@ var customerAndNumber = [];
 }
 function nowServing (katzDeliLine) { 
     if (katzDeliLine.length === 0) {
-   return 'The line is currently empty.'; 
+   return 'There is nobody waiting to be served!'; 
  }
     var customer = katzDeliLine.shift();
     
