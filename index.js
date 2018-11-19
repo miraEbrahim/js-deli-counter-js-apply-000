@@ -1,7 +1,5 @@
 var katzDeli = [];
-
-
-function takeANumber(katzDeli,newCustomer) {
+var takeANumber = function(katzDeli,newCustomer) {
   if (katzDeli.length > 0 ){
     katzDeli.push(newCustomer);
     return ('Welcome, ' + newCustomer + '. You are number ' + katzDeli.length + ' in line.')
@@ -48,5 +46,5 @@ function nowServing (katzDeliLine) {
    return "Currently serving " + customer + "." ;
 }
 
-const deliLine = ['Ada', 'Grace', 'Kent'];
+const deliLine = ["Ada", "Grace", "Kent"];
 console.log(deliLine);
