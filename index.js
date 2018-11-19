@@ -16,6 +16,8 @@ function nowServing (katzDeliLine) {
    return "Currently serving " + customer + ".";
 }
 
+takeANumber(katzDeliLine,"Ada");
+
 describe('nowServing', ()=> {
   it('returns the line is empty when no one is on line', () => {
     expect(nowServing([]))
