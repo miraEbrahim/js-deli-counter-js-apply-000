@@ -22,9 +22,9 @@ describe('nowServing', ()=> {
     .toEqual("There is nobody waiting to be served!");
   });
   it('returns an announcement about the person it is serving, and shifts the line', () => {
-    const deliLine = ["Ada","Grace","Kent"];
-    expect(nowServing(deliLine)).toEqual("Currently serving Ada.");
-    expect(deliLine).toEqual(["Grace","Kent"]);
+    const deliLine = ["Steven","Blake","Avi"];
+    expect(nowServing(deliLine)).toEqual("Currently serving Steven.");
+    expect(deliLine).toEqual(["Blake","Avi"]);
   });
 });
 
@@ -47,5 +47,5 @@ function nowServing (katzDeliLine) {
    return "Currently serving " + customer + "." ;
 }
 
-const deliLine = ["Ada", "Grace", "Kent"];
+const deliLine = ["Steven", "Blake", "Avi"];
 console.log(deliLine);
