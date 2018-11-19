@@ -22,7 +22,7 @@ describe('nowServing', ()=> {
     .toEqual("There is nobody waiting to be served!");
   });
   it('returns an announcement about the person it is serving, and shifts the line', () => {
-    const deliLine = ["Ada", "Grace","Kent","Matz"];
+    const deliLine = ["Ada", "Grace","Kent"];
     expect(nowServing(deliLine))
     .toEqual("Currently serving Ada");
     expect(deliLine).toEqual(["Grace","Kent"]);
