@@ -21,7 +21,7 @@ describe('nowServing', ()=> {
     .toEqual("There is nobody waiting to be served!");
   });
   it('returns an announcement about the person it is serving, and shifts the line', () => {
-    const deliLine = ["Ada", "Grace","Kent"];
+    const deliLine = ["Ada","Grace","Kent"];
     expect(nowServing(deliLine)).toEqual("Currently serving Ada.");
     expect(deliLine).toEqual(["Grace","Kent"]);
   });
@@ -41,10 +41,10 @@ function nowServing (katzDeliLine) {
     if(katzDeliLine.length===0) {
    return 'There is nobody waiting to be served!'; 
  }
-    var customer = katzDeliLine.shift(); // shift array of people
+    var customer = katzDeliLine.shift();
     
    return "Currently serving " + customer + "." ;
 }
 
-const deliLine = ["Ada", "Grace", "Kent"];
+const deliLine = ['Ada', 'Grace', 'Kent'];
 console.log(deliLine);
