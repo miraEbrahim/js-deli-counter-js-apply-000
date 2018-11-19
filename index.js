@@ -23,14 +23,13 @@ describe('nowServing', ()=> {
   });
   it('returns an announcement about the person it is serving, and shifts the line', () => {
     const deliLine = ["Ada", "Grace","Kent"];
-    expect(nowServing(deliLine))
-    .toEqual("Currently serving Ada");
+    expect(nowServing(deliLine)).toEqual("Currently serving Ada.");
     expect(deliLine).toEqual(["Grace","Kent"]);
   });
 });
 
 var currentLine = function (katzDeliLine) {
-  if (katzDeliLine.length===0) {
+  if  (katzDeliLine.length === 0 ) {
     return "The line is currently empty.";
   }
 var customerAndNumber = [];
